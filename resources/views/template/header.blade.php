@@ -29,7 +29,7 @@
                                     <li> <a href="{{ route('waktu-layanan') }}">Waktu Layanan</a>
                                     </li>
                                     <li><a href="{{ route('tarif-retribusi') }}">Tarif Pemeriksaan</a> </li>
-                                    <li><a href=http://silukihebat.bukittinggikota.go.id target="_blank">Panduan
+                                    <li><a href=http://siluki-hebat.bukittinggikota.go.id target="_blank">Panduan
                                             Pelayanan (SiLUKI
                                             Hebat)</a></li>
 

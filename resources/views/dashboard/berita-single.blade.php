@@ -58,14 +58,10 @@
                     <div class="share-post">
                         <span>Share this Post!</span>
                         <div class="social-icons">
-                            <a href="https://www.facebook.com/p/UPTD-Laboratorium-Kesehatan-Bukittinggi-100066542015986/?locale=id_ID"
-                                target="_blank"><img src="facebook.png"
-                                    style="width: 50px; height: 50px; object-fit: cover; border-radius: 10px"
-                                    alt=""></a>&nbsp;
-                            <a href="https://www.instagram.com/labkes.bukittinggi" target="_blank"><img
-                                    src="instagram.png"
-                                    style="width: 50px; height: 50px; object-fit: cover; border-radius: 10px"
-                                    alt=""></a>&nbsp;
+                            <a href="https://www.facebook.com/p/UPTD-Laboratorium-Kesehatan-Bukittinggi-1000665420 15986/?locale=id_ID"
+                                class="fb"><i class="icon-euro"></i></a>
+                            <a href="https://www.instagram.com/labkes.bukittinggi" class="ig"><i
+                                    class="icon-instagram"></i></a>
 
                             <a href="htttps://www.google.com" class="gp"><i class="icon-google-plus"></i></a>
                         </div>

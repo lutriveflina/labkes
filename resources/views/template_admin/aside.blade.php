@@ -155,7 +155,7 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">Capaian Kerja</span>
+                    <span class="nav-link-text ms-1">Capaian Kinerja</span>
                 </a>
             </li>
             <li class="nav-item">

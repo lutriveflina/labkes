@@ -10,7 +10,7 @@
         <div class="card mb-4">
             <div class="card-header pb-3">
                 <div class="d-flex align-items-center justify-content-between">
-                    <h6>Capaian Kerja</h6>
+                    <h6>Capaian Kinerja</h6>
                     <div>
                         <a href="{{ route('admin.capaian-kerja.form') }}" class="btn btn-sm bg-gradient-primary"><i
                                 class="fas fa-plus"></i> Tambah</a>

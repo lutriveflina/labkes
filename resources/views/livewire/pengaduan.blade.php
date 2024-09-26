@@ -16,7 +16,7 @@
 
             <div class="col-md-12">
                 <div class="social-icons">
-                    <a href="https://www.email.com/labkeskotabukittinggi@gmail.com" target="_blank"><img src="email.png"
+                    <a href="https://www.email.com/labkesbkt@gmail.com " target="_blank"><img src="email.png"
                             style="width: 50px; height: 50px; object-fit: cover; border-radius: 10px"></a>&nbsp;
                     <a href="https://www.facebook.com/p/UPTD-Laboratorium-Kesehatan-Bukittinggi-100066542015986/?locale=id_ID"
                         target="_blank"><img src="facebook.png"

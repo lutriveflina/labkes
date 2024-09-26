@@ -11,8 +11,8 @@ use Illuminate\Support\Facades\Validator;
 class CapaianKerjaController extends Controller
 {
     public function index(){
-        $data['title'] = "Capaian Kerja";
-        $data['breadCrumb'] = ['Capaian Kerja', 'Data'];
+        $data['title'] = "Capaian Kinerja";
+        $data['breadCrumb'] = ['Capaian Kinerja', 'Data'];
         $data['active'] = 'capaian-kerja';
         $listCapaianKerja = CapaianKerja::get();
         $data['listCapaianKerja'] = $listCapaianKerja;
@@ -50,7 +50,7 @@ class CapaianKerjaController extends Controller
             'id' => $request->id_capaian_kerja
         ], $data);
 
-        return redirect()->route('admin.capaian-kerja')->with('success', 'Berhasil menambahkan CapaianKerja');
+        return redirect()->route('admin.capaian-kerja')->with('success', 'Berhasil menambahkan CapaianKinerja');
     }
 
     public function form(Request $request){
@@ -65,10 +65,10 @@ class CapaianKerjaController extends Controller
     public function delete($id){
         $capaianKerja = CapaianKerja::find($id);
         if(!$capaianKerja){
-            return redirect()->back()->with('fail', 'Data CapaianKerja tidak ditemukan !');
+            return redirect()->back()->with('fail', 'Data CapaianKinerja tidak ditemukan !');
         }
 
         $capaianKerja->delete();
-        return redirect()->back()->with('success', 'Berhasil menghapus data CapaianKerja');
+        return redirect()->back()->with('success', 'Berhasil menghapus data CapaianKinerja');
     }
 }

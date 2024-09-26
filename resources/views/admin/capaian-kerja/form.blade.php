@@ -5,7 +5,7 @@
 <div class="card mb-4">
     <div class="card-header pb-3">
         <div class="d-flex align-items-center justify-content-between">
-            <h6>From Capaian Kerja</h6>
+            <h6>From Capaian Kinerja</h6>
         </div>
     </div>
     <div class="card-body pt-0 pb-2">
