@@ -52,9 +52,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://labkes.bukittinggikota.go.id/'),
+    'url' => env('APP_URL', 'http://laborkesehatan.bukittinggikota.go.id/'),
 
-    'asset_url' => env('ASSET_URL', 'http://labkes.bukittinggikota.go.id/public'),
+    'asset_url' => env('ASSET_URL', 'http://laborkesehatan.bukittinggikota.go.id/public'),
 
     /*
     |--------------------------------------------------------------------------
