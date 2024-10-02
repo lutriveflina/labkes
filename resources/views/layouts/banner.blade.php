@@ -19,9 +19,7 @@
                     data-speed="700" data-start="1200" data-easing="Power3.easeInOut" data-elementdelay="0.1"
                     data-endelementdelay="0.1" style="z-index: 4;"><img class="transprint"
                         src="images/slides/transprint-bg.png" alt="">
-
                 </div> --}}
-
 
                 {{-- <div class="tp-caption title-bold tp-resizeme rs-parallaxlevel-0 fade start" data-x="670"
                     data-y="218" data-speed="1000" data-start="1800" data-easing="Power3.easeInOut" data-splitin="none"
@@ -93,7 +91,6 @@
                         eiusmod tempor incididunt ut labore </div>
                 </div>
 
-
                 <div class="tp-caption banner-button tp-resizeme rs-parallaxlevel-0  fade start" data-x="30"
                     data-y="402" data-speed="1000" data-start="1800" data-easing="Power3.easeInOut" data-splitin="none"
                     data-splitout="none" data-elementdelay="0.05" data-endelementdelay="0.1" data-endspeed="300"
@@ -104,7 +101,6 @@
                             more</a>
                     </div>
                 </div> --}}
-
             </li>
 
 
