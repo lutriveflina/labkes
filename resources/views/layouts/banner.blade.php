@@ -9,7 +9,7 @@
             <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"
                 data-title="Intro Slide">
 
-                <img src="{{ asset('/assets/images/slides/banner-gedung.jpg') }}" alt="" data-bgposition="center top"
+                <img src="{{ asset('/assets/images/slides/gedung-labkes.jpg') }}" alt="" data-bgposition="center top"
                     data-bgfit="cover" data-bgrepeat="no-repeat">
 
                 {{--
@@ -60,7 +60,7 @@
             <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"
                 data-title="Intro Slide">
 
-                <img src="{{ asset('/assets/images/slides/banner-gedung.jpg') }}" alt="" data-bgposition="center top"
+                <img src="{{ asset('/assets/images/slides/gedung-labkes.jpg') }}" alt="" data-bgposition="center top"
                     data-bgfit="cover" data-bgrepeat="no-repeat">
 
                 {{-- <div class="tp-caption customin customout rs-parallaxlevel-0" data-x="left" data-y="188"
