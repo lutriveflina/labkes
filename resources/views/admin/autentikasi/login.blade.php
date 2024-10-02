@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="{{asset('/assets_admin/img/apple-icon.png')}}">
     <link rel="icon" type="image/x-icon" href="{{ asset('/assets/images/custom/logo-pkk.png') }}">
     <title>
-        Admin Puskesmas Guguk Panjang Kota Bukittinggi
+        Admin Labkes Kota Bukittinggi
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -39,12 +39,14 @@
                                         @csrf
                                         <label>Email</label>
                                         <div class="mb-3">
-                                            <input type="email" name="email" class="form-control" placeholder="Email" value="{{ session()->get('email') }}"
-                                                aria-label="Email" aria-describedby="email-addon">
+                                            <input type="email" name="email" class="form-control" placeholder="Email"
+                                                value="{{ session()->get('email') }}" aria-label="Email"
+                                                aria-describedby="email-addon">
                                         </div>
                                         <label>Password</label>
                                         <div class="mb-3">
-                                            <input type="password" name="password" class="form-control" placeholder="Password" value="{{ session()->get('password') }}"
+                                            <input type="password" name="password" class="form-control"
+                                                placeholder="Password" value="{{ session()->get('password') }}"
                                                 aria-label="Password" aria-describedby="password-addon">
                                         </div>
                                         <div class="text-center">
@@ -58,7 +60,8 @@
                         <div class="col-md-6">
                             <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
                                 <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6"
-                                    style="background-image:url({{ asset('/assets_admin/img/curved-images/curved6.jpg') }})"></div>
+                                    style="background-image:url({{ asset('/assets_admin/img/curved-images/curved6.jpg') }})">
+                                </div>
                             </div>
                         </div>
                     </div>
