@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => null,
+    'asset_url' => env('APP_URL', 'https://laborkesehatan.bukittinggikota.go.id'),
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +68,7 @@ return [
     |
     */
 
-    'app_url' => null,
+    'app_url' => env('APP_URL', 'https://laborkesehatan.bukittinggikota.go.id'),
 
     /*
     |--------------------------------------------------------------------------
