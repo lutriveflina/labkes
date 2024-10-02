@@ -61,4 +61,5 @@ class webConfigController extends Controller
         $webconfig->delete();
         return redirect()->back()->with('success', 'Berhasil menghapus data webconfig');
     }
+
 }

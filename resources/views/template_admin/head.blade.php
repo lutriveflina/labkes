@@ -7,9 +7,9 @@
     <title>
         Admin Labkes
     </title>
-    @if ($env == 'production')
+
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    @endif
+
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Nucleo Icons -->
