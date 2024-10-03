@@ -36,7 +36,7 @@ class CapaianKerjaController extends Controller
             if($validator->fails()){
                 return redirect()->back()->with('fail', $validator->errors()->all()[0]);
             }
-            $path = Storage::disk('public')->put('regulasi-eksternal', $request->file('file'));
+            $path = Storage::disk('public')->put('capaian-kinerja', $request->file('file'));
             $data['file'] = $path;
             $file = $path;
         }
