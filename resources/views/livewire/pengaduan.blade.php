@@ -24,7 +24,7 @@
                     <a href="https://www.instagram.com/labkes.bukittinggi" target="_blank"><img src="instagram.png"
                             style="width: 50px; height: 50px; object-fit: cover; border-radius: 10px" alt=""></a>&nbsp;
                     <button style="background-color: #4AD295;"><a
-                            href="https://api.whatsapp.com/send?phone=6282384199918&text=Hallo%20Ada%20yang%20Bisa%20Kami%20Bantu"
+                            href="https://api.whatsapp.com/send?phone=6285191926122&text=Hallo%20Ada%20yang%20Bisa%20Kami%20Bantu"
                             target="_blank"><img src="wa.jpg"
                                 style="width: 50px; height: 50px; object-fit: cover; border-radius: 10px"></a></button>
                 </div>

@@ -29,6 +29,7 @@
                                     <li><i class="icon-location"></i> <span>Jl. Prof. M Yamin SH, Tarok Dipo, Kec. Guguk
                                             Panjang, Kota Bukittinggi, Sumatera Barat 26181 </span></li>
                                     <li><i class="icon-phone4"></i> <span>(0752) 628195</span></li>
+                                    <li><i class="icon-phone4"></i> <span>+62 851-9192-6122</span></li>
                                     <li><a href="labkesbkt@gmail.com " target="_blank"><i class="icon-dollar"></i>
                                             <span>labkesbkt@gmail.com </span></a></li>
                                 </ul>
