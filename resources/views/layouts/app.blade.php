@@ -74,7 +74,6 @@
     </div>
     <!--End Content-->
 
-
     @include('template.footer')
     @include('template.script')
     @livewireScripts
