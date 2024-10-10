@@ -22,6 +22,7 @@ use App\Http\Controllers\Admin\RegulasiInternalController;
 use App\Http\Controllers\Admin\RegulasiEksternalController;
 use App\Http\Controllers\Admin\webConfigController;
 use App\Http\Controllers\Admin\FaqController;
+use App\Http\Controllers\Admin\PengumumanController;
 use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
 
@@ -164,6 +165,14 @@ Route::middleware('auth.admin')->group(function () {
     });
 
     Route::get('kritik-saran', [KritikSaranController::class, 'index'])->name('admin.kritik-saran');
+
+    Route::prefix('pengumuman')->group(function () {
+        Route::get('', [PengumumanController::class, 'index'])->name('admin.pengumuman');
+        Route::post('post', [PengumumanController::class, 'post'])->name('admin.pengumuman.post');
+        Route::get('form', [PengumumanController::class, 'form'])->name('admin.pengumuman.form');
+        Route::delete('delete/{id}', [PengumumanController::class, 'delete'])->name('admin.pengumuman.delete');
+        Route::get('detail/{id}', [PengumumanController::class, 'detail'])->name('admin.pengumuman.detail');
+    });
 
     Route::get('/', function () {
 

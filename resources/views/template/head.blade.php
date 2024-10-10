@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <link rel="icon" type="image/png" href="{{ asset('/assets/images/favicon-medical.png')}}">
+    <link rel="icon" type="image/png" href="{{ asset('/assets/images/Logo_Kota_Bukittinggi.png')}}">
 
     <!--main file-->
     <link href="{{ asset('/assets/css/medical-guide.css') }}" rel="stylesheet" type="text/css">

@@ -14,7 +14,7 @@
                         <h2>Berita Kegiatan</h2>
                         <ul>
                             <li><a href="{{ route('home') }}">Home </a></li>
-                            <li><a href="#.">Blog</a></li>
+
                             <li><a>Berita</a></li>
                         </ul>
                     </div>

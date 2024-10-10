@@ -11,6 +11,7 @@ use App\Http\Controllers\PengaduanController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\TataNilaiController;
 use App\Http\Controllers\LayananLabkesController;
+use App\Http\Controllers\PengumumanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,6 +51,8 @@ Route::get('regulasiEksternal', [WebController::class, 'RegulasiEksternal'])->na
 Route::get('capaianKerja', [WebController::class, 'CapaianKerja'])->name('capaianKerja');
 Route::get('waktu-layanan', [WebController::class, 'WaktuLayanan'])->name('waktu-layanan');
 Route::get('faq', [WebController::class, 'Faq'])->name('faq');
+Route::get('pengumuman', [PengumumanController::class, 'Pengumuman'])->name('pengumuman');
+Route::get('pengumuman.detail{id}', [PengumumanController::class, 'detail'])->name('pengumuman.detail');
 
 
 
