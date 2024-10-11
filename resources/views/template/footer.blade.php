@@ -38,7 +38,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6" style="color: aliceblue;">
                             <br />Jumlah Pengunjung
-                            <!-- <a href='http://www.freevisitorcounters.com'>Freevisitorcounters.com</a> -->
+                            <a href='http://www.freevisitorcounters.com'>Freevisitorcounters.com</a>
                             <script type='text/javascript'
                                 src='https://www.freevisitorcounters.com/auth.php?id=a76229bdec49adf14ad323fa7a8aa963294b4d49'></script>
                             <script type="text/javascript"

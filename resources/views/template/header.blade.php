@@ -45,7 +45,7 @@
                                     <li><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
                                     <li><a href="https://siluki-hebat.bukittinggikota.go.id/" target="_blank">
                                             <span style="color: #feb900">DAFTAR SAMPLE <span
-                                                    style="color: #0eb0aa">GRATIS</span></span></a></li>
+                                                    style="color: #0eb0aa">Online</span></span></a></li>
                                 </ul>
                             </li>
                             <li class="parent"><a href="{{ route('admin.autentikasi.login') }}"
@@ -104,7 +104,7 @@
                         <li><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
                         <li><a href="https://siluki-hebat.bukittinggikota.go.id/" target="_blank">
                                 <span style="color: #feb900">DAFTAR SAMPLE <span
-                                        style="color: #0eb0aa">GRATIS</span></span></a></li>
+                                        style="color: #0eb0aa">Online</span></span></a></li>
 
                     </ul>
                 </li>
