@@ -32,8 +32,17 @@
                                     <li><i class="icon-phone4"></i> <span>+62 851-9192-6122</span></li>
                                     <li><a href="labkesbkt@gmail.com " target="_blank"><i class="icon-dollar"></i>
                                             <span>labkesbkt@gmail.com </span></a></li>
+
                                 </ul>
                             </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" style="color: aliceblue;">
+                            <br />Jumlah Pengunjung
+                            <!-- <a href='http://www.freevisitorcounters.com'>Freevisitorcounters.com</a> -->
+                            <script type='text/javascript'
+                                src='https://www.freevisitorcounters.com/auth.php?id=a76229bdec49adf14ad323fa7a8aa963294b4d49'></script>
+                            <script type="text/javascript"
+                                src="https://www.freevisitorcounters.com/en/home/counter/1077841/t/1"></script>
                         </div>
                     </div>
                 </div>
