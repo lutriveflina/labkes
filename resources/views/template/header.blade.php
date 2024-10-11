@@ -19,7 +19,6 @@
                                     <li> <a href="{{ route('tata-nilai') }}">Tata Nilai</a></li>
                                     <li> <a href="{{ route('renstra') }}">Renstra</a></li>
                                     <li> <a href="{{ route('capaianKerja') }}">Capaian Kinerja</a></li>
-                                    <!-- <li> <a href="{{ route('struktur-organisasi') }}">Struktur Organisasi</a> </li> -->
                                 </ul>
                             </li>
 
@@ -41,8 +40,6 @@
                                 <ul class="submenu">
                                     <li><a href="{{ route('regulasiInternal') }}">Regulasi Internal Labkes</a></li>
                                     <li><a href="{{ route('regulasiEksternal') }}">Regulasi Eksternal Labkes</a></li>
-                                    <!-- <li><a href="{{ route('maklumat-pelayanan') }}">Maklumat pelayanan</a></li> -->
-                                    <!-- <li><a href="{{ route('tarif-retribusi') }}">Tarif Retribusi Pelayanan</a> </li> -->
                                     <li><a href="{{ route('faq') }}">FAQ</a></li>
                                     <li><a href="{{ route('pengaduan') }}">Pengaduan</a></li>
                                     <li><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
@@ -51,15 +48,9 @@
                                                     style="color: #0eb0aa">GRATIS</span></span></a></li>
                                 </ul>
                             </li>
-                            <!-- <li class="parent"><a href="{{ route('penghargaan.detail') }}">Penghargaan</a></li> -->
                             <li class="parent"><a href="{{ route('admin.autentikasi.login') }}"
                                     target="_blank">Login</a>
                             </li>
-                            <!-- <li class="parent"><a href="https://siluki-hebat.bukittinggikota.go.id/" target="_blank">
-                                    <span style="color: #feb900">DAFTAR SAMPLE <span
-                                            style="color: #0eb0aa">GRATIS</span></span></a></li> -->
-
-
                         </ul>
                     </nav>
                 </div>
@@ -102,26 +93,22 @@
                     </ul>
                 </li>
 
-
                 <li class="parent"><a href="{{ route('berita.detail') }}">Berita</a></li>
-                <li class="parent"><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
 
                 <li class="parent"><a href="#."> Informasi & Pengaduan</a>
                     <ul class="submenu">
                         <li><a href="{{ route('regulasiInternal') }}">Regulasi Internal Labkes</a></li>
                         <li><a href="{{ route('regulasiEksternal') }}">Regulasi Eksternal Labkes</a></li>
-                        <!-- <li><a href="{{ route('maklumat-pelayanan') }}">Maklumat pelayanan</a></li> -->
-                        <!-- <li><a href="{{ route('tarif-retribusi') }}">Tarif Retribusi Pelayanan</a> </li> -->
                         <li><a href="{{ route('faq') }}">FAQ</a></li>
                         <li><a href="{{ route('pengaduan') }}">Pengaduan</a></li>
+                        <li><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
+                        <li><a href="https://siluki-hebat.bukittinggikota.go.id/" target="_blank">
+                                <span style="color: #feb900">DAFTAR SAMPLE <span
+                                        style="color: #0eb0aa">GRATIS</span></span></a></li>
+
                     </ul>
                 </li>
                 <li class="parent"><a href="{{ route('admin.autentikasi.login') }}" target="_blank">Login</a></li>
-                <li class="parent"><a href="https://siluki-hebat.bukittinggikota.go.id/" target="_blank">
-                        <span style="color: #feb900">DAFTAR SAMPLE <span style="color: #0eb0aa">GRATIS</span></span></a>
-                </li>
-
-
             </ul>
         </nav>
     </div>
