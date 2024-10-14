@@ -16,14 +16,15 @@
                     hidden>
                 <div class="form-group col-md-6">
                     <label for="">Judul</label>
-                    <input type="text" value="{{ $renstra ? $renstra->Judul : null }}" name="Judul" class="form-control"
+                    <input type="text" value="{{ $renstra ? $renstra->Judul : null }}" name="judul" class="form-control"
                         required>
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="">File</label>
                     <input type="file" name="file" class="form-control" accept="pdf,xlx,csv">
-                    <div class="col-md-6 text-center pt-3 pb-5">
+                    <div class="text-center total-ukuran text-sm"></div>
+                    <div class="text-center pt-3">
                         <img src="{{$renstra ? asset('storage/'. $renstra->file) : null}}" alt=""
                             class="img-fluid rounded-2" style="object-fit: cover;" id="upload_file">
                     </div>
@@ -42,13 +43,14 @@
 @section('js')
 <script>
     $(document).ready(function () {
-
         $('input[name="file"]').on('change', function () {
             const file = this.files[0];
             if (file) {
                 let reader = new FileReader();
                 reader.onload = function (event) {
-                    console.log(event.target.result);
+                    var total_ukuran = event.total / (1024 * 1024)
+                    console.log('total Ukuran ' + total_ukuran);
+                    $(".total-ukuran").html('Total Ukuran ' + total_ukuran.toFixed(2) + "MB")
                     $('#imgPreview').attr('src', event.target.result);
                 }
                 reader.readAsDataURL(file);
