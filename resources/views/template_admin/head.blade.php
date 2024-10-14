@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/assets_admin/css/toastify.min.css') }}">
     <!-- CSS Files -->
     <link id="pagestyle" href="{{ asset('/assets_admin/css/soft-ui-dashboard.css?v=1.0.7') }}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets_admin/css/custom.css') }}">
 
     @yield('css')
 </head>

@@ -15,7 +15,8 @@
 <script src="{{asset('/assets_admin/js/dataTables.bootstrap5.min.js')}} "></script>
 <script src="{{ asset('/assets_admin/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets_admin/js/select2.full.min.js') }}"></script>
-<script src="https://cdn.tiny.cloud/1/2btqppttepo6aydnn8xn23hi59g27djbwvywov1rsx85wg7j/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/2btqppttepo6aydnn8xn23hi59g27djbwvywov1rsx85wg7j/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin"></script>
 <script type="text/javascript" src="{{ asset('/assets_admin/js/toastify-js.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/assets_admin/js/sweetalert2@11.js') }}"></script>
 

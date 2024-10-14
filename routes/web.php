@@ -41,7 +41,6 @@ Route::get('tarif-retribusi', [WebController::class, 'TarifRetribusi'])->name('t
 Route::get('pola-tarif', [WebController::class, 'PolaTarif'])->name('pola-tarif');
 Route::get('layanan-labkes', [LayananLabkesController::class, 'LayananLabkes'])->name('layanan-labkes');
 Route::get('labkes/detail/{id}', [LayananLabkesController::class, 'singleDetail'])->name('labkes.detail');
-// Route::get('pengaduan', [PengaduanController::class, 'Pengaduan'])->name('pengaduan');
 Route::get('pengaduan', [PengaduanController::class, 'index'])->name('pengaduan');
 Route::get('sejarah', [SejarahController::class, 'Sejarah'])->name('sejarah');
 Route::get('tata-nilai', [TataNilaiController::class, 'TataNilai'])->name('tata-nilai');
