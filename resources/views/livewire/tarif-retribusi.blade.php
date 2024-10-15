@@ -32,8 +32,8 @@
                     <div class="col-md-12">
                         <div class="main-title">
                             <h4><span style="text-align: justify">PEMERINTAH KOTA BUKITTINGGI
-                                    LABORATORIUM KESEHATAN
-                                    <!-- </span> PERATURAN DAERAH BUKITTINGGI NOMOR 7 TAHUN 2019
+                                    LABORATORIUM KESEHATAN</span></h4>
+                            <!-- </span> PERATURAN DAERAH BUKITTINGGI NOMOR 7 TAHUN 2019
                                 TENTANG RETRIBUSI PELAYANAN KESEHATAN</h4> -->
                         </div>
                     </div>
