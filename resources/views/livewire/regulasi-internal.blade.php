@@ -31,11 +31,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-title">
-                            @if ($listRegulasiInternal != null)
-                            @foreach ($listRegulasiInternal as $item)
-                            <h4><span style="text-align: justify">{{ $item->judul }}</span></h4>
-                            @endforeach
-                            @endif
+
                         </div>
                     </div>
                 </div>
@@ -45,6 +41,7 @@
                     @foreach ($listRegulasiInternal as $item)
                     <div class="col-md-12">
                         <div class="investigation-sec">
+                            <h4><span style="text-align: justify">{{ $item->judul }}</span></h4>
                             <iframe src="{{ asset('storage/' . $item->file) }}" align="top" height="620" width="100%"
                                 frameborder="0" scrolling="auto"></iframe>
                         </div>
