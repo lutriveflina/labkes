@@ -38,15 +38,14 @@
                         </div>
                         <div class="col-lg-4 col-md-6" style="color: aliceblue;">
                             <br />Jumlah Pengunjung
-                            <a href='http://www.freevisitorcounters.com'>Freevisitorcounters.com</a>
+                            <a href='https://www.free-counters.org/'>www.free-counters.org</a>
                             <script type='text/javascript'
-                                src='https://www.freevisitorcounters.com/auth.php?id=a76229bdec49adf14ad323fa7a8aa963294b4d49'></script>
+                                src='https://www.freevisitorcounters.com/auth.php?id=35afc38ef95a8916a2a91688a89e20d983a7a38a'></script>
                             <script type="text/javascript"
-                                src="https://www.freevisitorcounters.com/en/home/counter/1077841/t/1"></script>
+                                src="https://www.freevisitorcounters.com/en/home/counter/1249086/t/1"></script>
                         </div>
                     </div>
                 </div>
-
 
             </div>
         </div>

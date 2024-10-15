@@ -31,8 +31,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-title">
-                            <h4><span style="text-align: justify">PEMERINTAH KOTA BUKITTINGGI
-                                    LABORATORIUM KESEHATAN
+                            @if ($listRegulasiInternal != null)
+                            @foreach ($listRegulasiInternal as $item)
+                            <h4><span style="text-align: justify">{{ $item->judul }}</span></h4>
+                            @endforeach
+                            @endif
                         </div>
                     </div>
                 </div>

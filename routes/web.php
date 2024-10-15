@@ -53,7 +53,3 @@ Route::get('faq', [WebController::class, 'Faq'])->name('faq');
 Route::get('pengumuman', [PengumumanController::class, 'Pengumuman'])->name('pengumuman');
 Route::get('pengumuman.detail{id}', [PengumumanController::class, 'detail'])->name('pengumuman.detail');
 
-
-
-
-
