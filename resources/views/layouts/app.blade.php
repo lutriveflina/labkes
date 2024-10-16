@@ -55,8 +55,7 @@
     {{-- @include('template.top-bar') --}}
     @include('template.header')
     <style>
-        #procedures-faq.accordion:first-child(display:block;
-        )
+        #procedures-faq.accordion:first-child(display:block; )
     </style>
 
     <!--Start Content-->
@@ -66,7 +65,7 @@
 
         @yield('content')
         <!-- <div style="position:fixed;right:20px;bottom:150px; z-index: 9999;"> -->
-        <a class="navbar-sub-item" href="https://siluki-hebat.bukittinggikota.go.id/" title="Info Proses">
+        <a class="navbar-sub-item" href="https://labkesehatan.web.id/" title="Info Proses">
             <picture class="nbi-picture">
                 <source srcset type="image/webp">
                 <img src="{{ asset('/assets/images/vertte_64.png')}}" style="width: 50px; height: 50px;"
