@@ -43,7 +43,7 @@
                                     <li><a href="{{ route('faq') }}">FAQ</a></li>
                                     <li><a href="{{ route('pengaduan') }}">Pengaduan</a></li>
                                     <li><a href="{{ route('pengumuman') }}">Pengumuman</a></li>
-                                    <li><a href="https://siluki-hebat.bukittinggikota.go.id/" target="_blank">
+                                    <li><a href="https://siluki.bukittinggikota.go.id/" target="_blank">
                                             <span style="color: #feb900">DAFTAR SAMPLE <span
                                                     style="color: #0eb0aa">Online</span></span></a></li>
                                 </ul>

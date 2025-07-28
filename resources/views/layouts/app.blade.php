@@ -48,6 +48,7 @@
     }
 </style>
 @livewireStyles
+@include('template.pre-loader')
 @include('template.head')
 
 <body>
@@ -65,7 +66,7 @@
 
         @yield('content')
         <!-- <div style="position:fixed;right:20px;bottom:150px; z-index: 9999;"> -->
-        <a class="navbar-sub-item" href="https://labkesehatan.web.id/" title="Info Proses">
+        <a class="navbar-sub-item" href="https://siluki.bukittinggikota.go.id/" target="_blank" title="Info Proses">
             <picture class="nbi-picture">
                 <source srcset type="image/webp">
                 <img src="{{ asset('/assets/images/vertte_64.png')}}" style="width: 50px; height: 50px;"

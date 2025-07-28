@@ -1,3 +1,4 @@
+@extends('layouts.pre-loader')
 @extends('layouts.app')
 @section('content')
 @include('template.time')
