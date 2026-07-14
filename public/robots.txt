@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://labkes.bukittinggikota.go.id/sitemap.xml
