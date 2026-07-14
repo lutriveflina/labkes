@@ -39,8 +39,10 @@ Route::get('struktur-organisasi', [WebController::class, 'StrukturOrganisasi'])-
 Route::get('maklumat-pelayanan', [WebController::class, 'MaklumatPelayanan'])->name('maklumat-pelayanan');
 Route::get('tarif-retribusi', [WebController::class, 'TarifRetribusi'])->name('tarif-retribusi');
 Route::get('pola-tarif', [WebController::class, 'PolaTarif'])->name('pola-tarif');
-Route::get('layanan-labkes', [LayananLabkesController::class, 'LayananLabkes'])->name('layanan-labkes');
-Route::get('labkes/detail/{id}', [LayananLabkesController::class, 'singleDetail'])->name('labkes.detail');
+Route::get('layanan-labkes', [LayananLabkesController::class, 'index'])->name('layanan-labkes');
+Route::get('labkes/detail/{id}', [LayananLabkesController::class, 'show'])
+    ->whereNumber('id')
+    ->name('labkes.detail');
 Route::get('pengaduan', [PengaduanController::class, 'index'])->name('pengaduan');
 Route::get('sejarah', [SejarahController::class, 'Sejarah'])->name('sejarah');
 Route::get('tata-nilai', [TataNilaiController::class, 'TataNilai'])->name('tata-nilai');
@@ -52,4 +54,3 @@ Route::get('waktu-layanan', [WebController::class, 'WaktuLayanan'])->name('waktu
 Route::get('faq', [WebController::class, 'Faq'])->name('faq');
 Route::get('pengumuman', [PengumumanController::class, 'Pengumuman'])->name('pengumuman');
 Route::get('pengumuman.detail{id}', [PengumumanController::class, 'detail'])->name('pengumuman.detail');
-

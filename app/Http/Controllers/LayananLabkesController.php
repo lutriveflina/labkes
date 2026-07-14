@@ -3,36 +3,33 @@
 namespace App\Http\Controllers;
 
 use App\Models\LayananPuskesmas;
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class LayananLabkesController extends Controller
 {
-
-    public function LayananLabkes(Request $request)
+    public function index()
     {
-
-        $listLayananLabkes = LayananPuskesmas::orderBy('id', 'DESC')->get();
-        $data['listLayananLabkes'] = $listLayananLabkes;
-        return view('dashboard.layanan-labkes', $data);
+        return view('dashboard.layanan-labkes', [
+            'title' => 'Jenis Layanan',
+            'metaDescription' => 'Daftar jenis layanan UPTD Laboratorium Kesehatan Kota Bukittinggi.',
+            'listLayananLabkes' => LayananPuskesmas::query()->orderBy('id')->get(),
+        ]);
     }
 
-    public function singleDetail(Request $request, $id)
+    public function show($id)
     {
+        $labkes = LayananPuskesmas::query()->findOrFail($id);
 
-        $labkes = LayananPuskesmas::find($id);
-        if (!$labkes) {
-            return redirect()->back()->with('fail', 'Data Layanan Kegiatan tidak ditemukan !');
-        }
-        //ambil data berdasarkan id kegiatan disini
-        $data = null;
-
-        //data lainnya
-        $data['title'] = $labkes->judul;
-        $data['subtitle'] = 'Layanan Laboratorium';
-        $data['labkes'] = $labkes;
-        $data['recentPost'] = LayananPuskesmas::take(3)->get();
-
-        return view('dashboard.labkes-detail', $data);
+        return view('dashboard.labkes-detail', [
+            'title' => $labkes->nama_layanan_puskesmas,
+            'metaDescription' => Str::limit($labkes->plain_description, 155),
+            'subtitle' => 'Layanan Laboratorium',
+            'labkes' => $labkes,
+            'otherServices' => LayananPuskesmas::query()
+                ->where('id', '<>', $labkes->id)
+                ->orderBy('id')
+                ->take(3)
+                ->get(),
+        ]);
     }
 }

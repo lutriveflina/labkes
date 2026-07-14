@@ -1,8 +1,9 @@
 <head>
-    <title>UPTD LABORATORIUM KESEHATAN</title>
+    <title>{{ isset($title) ? $title . ' | UPTD Laboratorium Kesehatan' : 'UPTD Laboratorium Kesehatan' }}</title>
     <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="{{ $metaDescription ?? 'Website resmi UPTD Laboratorium Kesehatan Kota Bukittinggi.' }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="{{ url()->current() }}">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <link rel="icon" type="image/png" href="{{ asset('/assets/images/Logo_Kota_Bukittinggi.png')}}">

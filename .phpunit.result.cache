@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Feature\\ExampleTest::test_example":3},"times":{"Tests\\Unit\\ExampleTest::test_example":0.013,"Tests\\Feature\\ExampleTest::test_example":0.669,"Tests\\Unit\\LayananPuskesmasTest::test_plain_description_removes_unsafe_html":0.029,"Tests\\Unit\\LayananPuskesmasTest::test_model_uses_soft_deletes":0.001}}

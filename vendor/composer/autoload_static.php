@@ -553,6 +553,7 @@ class ComposerStaticInitdf86bcb22ad32ad76d08ddb12c92fcd3
         'App\\Http\\Controllers\\Admin\\ParentSpController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ParentSpController.php',
         'App\\Http\\Controllers\\Admin\\PelayananController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PelayananController.php',
         'App\\Http\\Controllers\\Admin\\PenghargaanController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PenghargaanController.php',
+        'App\\Http\\Controllers\\Admin\\PengumumanController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PengumumanController.php',
         'App\\Http\\Controllers\\Admin\\RegulasiEksternalController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/RegulasiEksternalController.php',
         'App\\Http\\Controllers\\Admin\\RegulasiInternalController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/RegulasiInternalController.php',
         'App\\Http\\Controllers\\Admin\\RenstraController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/RenstraController.php',

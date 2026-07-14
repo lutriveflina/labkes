@@ -21,6 +21,7 @@ return array(
     'App\\Http\\Controllers\\Admin\\ParentSpController' => $baseDir . '/app/Http/Controllers/Admin/ParentSpController.php',
     'App\\Http\\Controllers\\Admin\\PelayananController' => $baseDir . '/app/Http/Controllers/Admin/PelayananController.php',
     'App\\Http\\Controllers\\Admin\\PenghargaanController' => $baseDir . '/app/Http/Controllers/Admin/PenghargaanController.php',
+    'App\\Http\\Controllers\\Admin\\PengumumanController' => $baseDir . '/app/Http/Controllers/Admin/PengumumanController.php',
     'App\\Http\\Controllers\\Admin\\RegulasiEksternalController' => $baseDir . '/app/Http/Controllers/Admin/RegulasiEksternalController.php',
     'App\\Http\\Controllers\\Admin\\RegulasiInternalController' => $baseDir . '/app/Http/Controllers/Admin/RegulasiInternalController.php',
     'App\\Http\\Controllers\\Admin\\RenstraController' => $baseDir . '/app/Http/Controllers/Admin/RenstraController.php',

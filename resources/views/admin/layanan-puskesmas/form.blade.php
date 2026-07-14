@@ -5,7 +5,7 @@
 <div class="card mb-4">
     <div class="card-header pb-3">
         <div class="d-flex align-items-center justify-content-between">
-            <h6>From Layanan Puskesmas Kegiatan</h6>
+            <h6>Form Layanan Labkes</h6>
         </div>
     </div>
     <div class="card-body pt-0 pb-2">
@@ -14,18 +14,18 @@
             <div class="row">
                 <input type="number" class="form-control" name="id_layanan_puskesmas" value="{{ $layananPuskesmas ? $layananPuskesmas->id : null }}" hidden>
                 <div class="form-group col-md-6">
-                    <label for="">Nama Layanan Puskesmas</label>
-                    <input type="text" value="{{ $layananPuskesmas ? $layananPuskesmas->nama_layanan_puskesmas : null }}" name="nama_layanan_puskesmas"  class="form-control" required>
+                    <label for="nama_layanan_puskesmas">Nama Layanan Labkes</label>
+                    <input id="nama_layanan_puskesmas" type="text" value="{{ old('nama_layanan_puskesmas', $layananPuskesmas ? $layananPuskesmas->nama_layanan_puskesmas : null) }}" name="nama_layanan_puskesmas" class="form-control" maxlength="255" required>
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="">Deskripsi</label>
-                    <textarea name="deskripsi" class="form-control">{{ $layananPuskesmas ? $layananPuskesmas->deskripsi : null }}</textarea>
+                    <label for="deskripsi">Deskripsi</label>
+                    <textarea id="deskripsi" name="deskripsi" class="form-control">{{ old('deskripsi', $layananPuskesmas ? $layananPuskesmas->deskripsi : null) }}</textarea>
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="">Foto Layanan Puskesmas</label>
-                    <input type="file" name="gambar" class="form-control" accept="image/jpg,image/jpeg,image/png">
+                    <label for="gambar">Foto Layanan Labkes {{ $layananPuskesmas ? '(opsional saat mengedit)' : '' }}</label>
+                    <input id="gambar" type="file" name="gambar" class="form-control" accept="image/jpg,image/jpeg,image/png" {{ $layananPuskesmas ? '' : 'required' }}>
                     <div class="col-md-6 text-center pt-3 pb-5">
                         <img src="{{$layananPuskesmas ? asset('storage/'. $layananPuskesmas->gambar) : null}}" alt="" class="img-fluid rounded-2" style="object-fit: cover;" id="imgPreview">
                     </div>

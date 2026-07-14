@@ -34,7 +34,7 @@
                     </div>
                     <div class="detail">
                         <h6 class="title-layanan text-hover">KIMIA: 12 Parameter</h6>
-                        <p>pH, Logam ( ex: Timbal, Cadmium, Arsen dll) dan Anion (ex: Nitrat, Nitrit dll)</p>
+                        <p>PH, Logam ( ex: Timbal, Cadmium, Arsen dll) dan Anion (ex: Nitrat, Nitrit dll)</p>
                     </div>
                 </div>
             </div>

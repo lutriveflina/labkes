@@ -12,8 +12,8 @@ class LayananPuskesmasController extends Controller
 {
     public function index(Request $request)
     {
-        $data['title'] = 'Layanan Puskesmas';
-        $data['breadCrumb'] = ['Layanan Puskesmas Data'];
+        $data['title'] = 'Layanan Labkes';
+        $data['breadCrumb'] = ['Data Layanan Labkes'];
         $data['active'] = 'layanan-puskesmas';
         $data['listLayananPuskesmas'] = LayananPuskesmas::get();
         return view('admin.layanan-puskesmas.index', $data);
@@ -21,8 +21,8 @@ class LayananPuskesmasController extends Controller
 
     public function form(Request $request)
     {
-        $data['title'] = 'Tambah Layanan Puskesmas';
-        $data['breadCrumb'] = ['Form Layanan Puskesmas'];
+        $data['title'] = 'Tambah Layanan Labkes';
+        $data['breadCrumb'] = ['Form Layanan Labkes'];
         $data['active'] = 'layanan-puskesmas';
         $data['layananPuskesmas'] = LayananPuskesmas::where('id', $request->id_layanan_puskesmas)->first();
         return view('admin.layanan-puskesmas.form', $data);
@@ -31,38 +31,40 @@ class LayananPuskesmasController extends Controller
 
     public function post(Request $request)
     {
+        $layanan = $request->filled('id_layanan_puskesmas')
+            ? LayananPuskesmas::find($request->id_layanan_puskesmas)
+            : null;
+
         $validator = Validator::make($request->all(), [
-            'nama_layanan_puskesmas' => 'required|string',
+            'nama_layanan_puskesmas' => 'required|string|max:255',
+            'deskripsi' => 'nullable|string',
+            'gambar' => ($layanan ? 'nullable' : 'required') . '|image|mimes:jpeg,jpg,png|max:5120',
+        ], [
+            'gambar.required' => 'Foto layanan wajib diunggah untuk data baru.',
+            'gambar.image' => 'File foto layanan harus berupa gambar.',
+            'gambar.mimes' => 'Foto layanan harus berformat JPG, JPEG, atau PNG.',
+            'gambar.max' => 'Ukuran foto layanan maksimal 5 MB.',
         ]);
 
         if ($validator->fails()) {
             return redirect()->back()->with('fail', $validator->errors()->all()[0]);
         }
 
-        $gambar = null;
         if ($request->hasFile('gambar')) {
-            $validator = Validator::make($request->all(), [
-                'gambar' => 'required|mimes:jpeg,jpg,png|max:5210'
-            ]);
-            if ($validator->fails()) {
-                return redirect()->back()->with('fail', $validator->errors()->all()[0]);
-            }
-            $path = Storage::disk('public')->put('layanan-puskesmas', $request->file('gambar'));
-            $data['gambar'] = $path;
-            $gambar = $path;
+            $data['gambar'] = Storage::disk('public')->put(
+                'layanan-puskesmas',
+                $request->file('gambar')
+            );
         }
 
         $data['nama_layanan_puskesmas'] = $request->nama_layanan_puskesmas;
         $data['deskripsi'] = $request->deskripsi;
-        if ($gambar != null) {
-            $data['gambar'] = $gambar;
-        }
 
         LayananPuskesmas::updateOrCreate([
             'id' => $request->id_layanan_puskesmas
         ], $data);
 
-        return redirect()->route('admin.layanan-puskesmas')->with('success', 'Berhasil menambahkan layanan puskesmas');
+        return redirect()->route('admin.layanan-puskesmas')->with('success', 'Data layanan Labkes berhasil disimpan.');
     }
 
     public function delete($id)
